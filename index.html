@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор калорий</title>
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        input, button { padding: 10px; margin: 5px; }
+        #log { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 Калькулятор калорий</h1>
+        <input type="text" id="product" placeholder="Продукт (например, яблоко)">
+        <input type="number" id="calories" placeholder="Калории на 100г">
+        <input type="number" id="weight" placeholder="Вес (грамм)">
+        <button onclick="addProduct()">Добавить</button>
+        <div id="log"></div>
+        <h3>Итого: <span id="total">0</span> ккал</h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
